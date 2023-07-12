@@ -1,14 +1,10 @@
-'''cs
-//Linguagem: C#
-//Language: C#
-
 using System;
-					
-class Program
+
+class JogoDaVelha
 {
-	static void Main()
-	{
-		char[,] tabuleiro = new char[3, 3];
+    static void Main()
+    {
+        char[,] tabuleiro = new char[3, 3];
         char jogador = 'O';
 
         for (int i = 0; i < 3; i++)
@@ -22,7 +18,7 @@ class Program
         bool jogoTerminado = false;
         while (!jogoTerminado)
         {
-            ImprimirTabuleiro(tabuleiro); //função
+            ImprimirTabuleiro(tabuleiro);
 
             Console.WriteLine("Jogador " + jogador + ", digite a linha (0-2):");
             int linha = Convert.ToInt32(Console.ReadLine());
@@ -59,18 +55,29 @@ class Program
 
         Console.ReadLine();
     }
-    static void ImprimirTabuleiro(char[,] tabuleiro) //mostra o tabuleiro toda hora
+
+    static void ImprimirTabuleiro(char[,] tabuleiro)
     {
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
             {
                 Console.Write(tabuleiro[i, j] + " ");
+
+                if (j < 2)
+                {
+                    Console.Write("| ");
+                }
             }
             Console.WriteLine();
+            if (i < 2)
+            {
+                Console.WriteLine("---------");
+            }
         }
     }
-    static bool VerificarVitoria(char[,] tabuleiro, char jogador) //é o que é
+
+    static bool VerificarVitoria(char[,] tabuleiro, char jogador)
     {
         for (int i = 0; i < 3; i++)
         {
@@ -86,7 +93,7 @@ class Program
                 return true;
             }
         }
-        if ((tabuleiro[0, 0] == jogador && tabuleiro[1, 1] == jogador && tabuleiro[2, 2] == jogador) || //diagonais
+        if ((tabuleiro[0, 0] == jogador && tabuleiro[1, 1] == jogador && tabuleiro[2, 2] == jogador) ||
             (tabuleiro[0, 2] == jogador && tabuleiro[1, 1] == jogador && tabuleiro[2, 0] == jogador))
         {
             return true;
@@ -94,7 +101,8 @@ class Program
 
         return false;
     }
-    static bool TabuleiroCompleto(char[,] tabuleiro) //tabuleiro completo ou não
+
+    static bool TabuleiroCompleto(char[,] tabuleiro)
     {
         for (int i = 0; i < 3; i++)
         {
@@ -108,5 +116,5 @@ class Program
         }
 
         return true;
-	}
+    }
 }
