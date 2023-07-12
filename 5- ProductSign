@@ -1,8 +1,8 @@
 using System;
 
-public class SemCalcular
+class SemCalcular
 {
-	public static void Main()
+	static void Main()
 	{
 		 
 		/*  Write a program that shows the sign (+ or -) of the product of three real
