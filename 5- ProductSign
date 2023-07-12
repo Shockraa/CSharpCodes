@@ -1,0 +1,82 @@
+using System;
+
+public class SemCalcular
+{
+	public static void Main()
+	{
+		 
+		/*  Write a program that shows the sign (+ or -) of the product of three real
+         numbers, without calculating it. Use a sequence of if operators.  */
+
+		Console.WriteLine("N1:");
+		int n1 = int.Parse(Console.ReadLine());
+		Console.WriteLine("N2:");
+		int n2 = int.Parse(Console.ReadLine());
+		Console.WriteLine("N3:");
+		int n3 = int.Parse(Console.ReadLine());
+		if (n3 > 0)
+		{
+			if (n1 + n2 > 0)
+			{
+				Console.WriteLine("+");
+			}
+			else if (n1 + n2 < 0)
+			{
+				if (Math.Abs(n1 + n2) > n3)
+				{
+					Console.WriteLine("-");
+				}
+				else if (Math.Abs(n1 + n2) < n3)
+				{
+					Console.WriteLine("+");
+				}
+
+				if (Math.Abs(n1 + n2) == n3)
+				{
+					Console.WriteLine("+");
+				}
+			}
+			else
+			{
+				Console.WriteLine("+");
+			}
+		} //Fecha ´Primeiro IF principal
+		
+		
+		else if (n3 < 0)
+		{
+			if (n1 + n2 > 0)
+			{
+				if (n1 + n2 > n3)
+				{
+					Console.WriteLine("+");
+				}
+				else if (n1 + n2 < n3)
+				{
+					Console.WriteLine("-");
+				}
+				else
+				{
+					Console.WriteLine("+");
+				}
+			}
+			else if (n1 + n2 < 0)
+			{
+				Console.WriteLine("-");
+			}
+		} //Fecha segundo if principal
+		
+		
+		else
+		{
+			if (n1 + n2 >= n3)
+			{
+				Console.WriteLine("+");
+			}
+			else
+			{
+				Console.WriteLine("-");
+			}
+		}
+	}
+}
