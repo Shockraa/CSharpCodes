@@ -6,6 +6,8 @@ class ConversorBinário
 	{
 		//Write a program that converts a decimal number to binary one.
 		//Write a program that converts a binary number to decimal one.
+
+		//Recomendado usar a versão mais recente do .NET
 		
 		Console.WriteLine("Olá amigo, como você deseja converter (digite o número correspondente)");
 		Console.WriteLine("1- Decimal para binário");
