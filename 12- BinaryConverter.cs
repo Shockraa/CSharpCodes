@@ -15,15 +15,15 @@ class ConversorBinário
 		{
 			Console.WriteLine("Insira o número decimal");
 			int numeroDecimal = int.Parse(Console.ReadLine());
-			string numeroBinario = Convert.ToString(numeroDecimal, 2);
+			string numeroBinario = Convert.ToString(numeroDecimal, 2); //Conversão para binário, o "2" mostra que é número binário (base 2 pois apenas contém os números 0 e 1)
 			Console.WriteLine("Número binário: " + numeroBinario);
 		}
 		else if (escolha == 2)
 		{
 			Console.WriteLine("Insira o número binário");
 			string numeroBinario = Console.ReadLine();
-             int numeroDecimal = Convert.ToInt32(numeroBinario, 2);
-             Console.WriteLine(numeroDecimal); 
+             int numeroDecimal = Convert.ToInt32(numeroBinario, 2); //Conversão para decimal
+             Console.WriteLine("Número decimal: " + numeroDecimal); 
 		}
 		else
 		{
