@@ -7,13 +7,12 @@ class ArrayIguais
         /Write a program, which reads two arrays from the console and checks 
           whether they are equal (two arrays are equal when they are of equal 
           length and all of their elements, which have the same index, are equal)./
-        //Obs, fiz usando apenas variáveis do tipo int, futuramente adicionarei outros tipos
 
 
         Console.WriteLine("Qual é a largura em número inteiro do primeiro array?");
         int n = int.Parse(Console.ReadLine());
         int[] array1 = new int[n]; //Inicializa primeiro array sem conteúdo
-        for (int i = 0; i < n; i++) //Loop que preenche ele
+        for (int i = 0; i < n; i++) //Loop que preenche o primeiro array
         {
             Console.WriteLine("Insira os elementos da posição {0} do array", i);
             array1[i] = int.Parse(Console.ReadLine());
