@@ -8,7 +8,7 @@ class MatrizEspiral
 
         int n = int.Parse(Console.ReadLine()); //Valor usuário
         int[,] matrix = new int[n, n]; //Faz Matriz de acordo com o valor recebido (linha e coluna)
-        FillMatrix(matrix, n); //Função para prencher matriz
+        FillMatrix(matrix, n); //Função para preencher matriz
         PrintMatrix(matrix, n); //Função para mostrar matriz na tela
     }
 
