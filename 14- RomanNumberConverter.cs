@@ -1,13 +1,13 @@
 using System;
 
-class Program
+class RomanNumberConverter
 {
     static void Main()
     {
         // Write a program that converts Arabic digits to Roman ones (Obs, Arabic = Decimal então usei decimal).
         Console.WriteLine("Digite num");
         int num = int.Parse(Console.ReadLine());
-        string numeroRomano = ConverterParaRomano(num);
+        string numeroRomano = ConverterParaRomano(num); //Função
         Console.WriteLine(numeroRomano);
     }
 
