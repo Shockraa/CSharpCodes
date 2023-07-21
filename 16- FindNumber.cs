@@ -4,6 +4,11 @@ public class FindNumber
 {
     public static void Main()
     {
+        /*Write a method that finds how many times certain number can be
+          found in a given array. Write a program to test that the method works
+          correctly.*/
+        //Ex feito para treinar o "High-Quality programming code" ,ou seja, métodos
+        
         Console.WriteLine("Qual é a largura do array?"); 
         int n = int.Parse(Console.ReadLine());
 
