@@ -8,9 +8,9 @@ public class ReverterNum
        //Ex feito para treinar métodos :)
         Console.WriteLine("Digite um número inteiro para ser revertido:");
         int numero = int.Parse(Console.ReadLine());
-        int[] array = NumeroParaArray(numero);
-        int[] reverso = ReverterArray(array);
-        foreach (int num in reverso)
+        int[] array = NumeroParaArray(numero); //Método que passa o número para o array
+        int[] reverso = ReverterArray(array); //Método para reverter
+        foreach (int num in reverso) //Escreve o array revertido
         {
             Console.Write(num);
         }
@@ -20,21 +20,21 @@ public class ReverterNum
 
     public static int[] NumeroParaArray(int numero)
     {
-        string numeroString = numero.ToString();
-        int[] array = new int[numeroString.Length];
-        for (int i = 0; i < numeroString.Length; i++)
+        string numeroString = numero.ToString(); //Converte o num em string para que ele tenha uma largura definida
+        int[] array = new int[numeroString.Length]; //Passa a largra
+        for (int i = 0; i < numeroString.Length; i++) 
         {
-            array[i] = int.Parse(numeroString[i].ToString());
+            array[i] = int.Parse(numeroString[i].ToString()); //Preenche
         }
 
         return array;
     }
     public static int[] ReverterArray(params int[] array)
     {
-        int[] reverso = new int[array.Length];
+        int[] reverso = new int[array.Length]; 
         for (int i = 0; i < array.Length; i++)
         {
-            reverso[i] = array[array.Length - i - 1];
+            reverso[i] = array[array.Length - i - 1]; //Processo para reverter
         }
         return reverso;
 
