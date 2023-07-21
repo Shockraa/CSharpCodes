@@ -1,18 +1,18 @@
 using System;
 
-public class Program
+public class FindNumber
 {
     public static void Main()
     {
-        Console.WriteLine("Qual é a largura do array?");
+        Console.WriteLine("Qual é a largura do array?"); 
         int n = int.Parse(Console.ReadLine());
 
-        int[] array = GetValoresArray(n);
+        int[] array = GetValoresArray(n); //Método que faz o usuário dar os valores do array
 
         Console.WriteLine("Qual número deseja achar no array?");
         int achar = int.Parse(Console.ReadLine());
-        int quantidade = GetRepeticao(achar, n, array);
-        Console.WriteLine("O número que você escolheu repete {0} vezes no array dado" , quantidade);
+        int quantidade = GetRepeticao(achar, n, array); //Método para achar a quantidade de vezes que repete
+        Console.WriteLine("O número que você escolheu repete {0} vezes no array dado" , quantidade); //Resposta
     }
     public static int[] GetValoresArray(int n)
     {
@@ -20,7 +20,7 @@ public class Program
 
         for (int i = 0; i < n; i++)
         {
-            Console.WriteLine("Insira o valor da posição {0}:" , i);
+            Console.WriteLine("Insira o valor da posição {0}:" , i); 
             array[i] = int.Parse(Console.ReadLine());
         }
 
@@ -31,7 +31,7 @@ public class Program
         int quantidade = 0;
         for (int i = 0; i < n; i++)
         {
-            if (array[i] == achar)
+            if (array[i] == achar) //Se repitir, aumenta
             {
                 quantidade++;
             }
