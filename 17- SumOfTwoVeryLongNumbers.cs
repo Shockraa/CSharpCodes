@@ -5,15 +5,15 @@ public class SumOfTwoVeryLongNumbers
 	public static void Main()
 	{
 		/*Write a method that calculates the sum of two very long positive
-         integer numbers. The numbers are represented as array digits and
-         the last digit (the ones) is stored in the array at index 0. Make the
-         method work for all numbers with length up to 10,000 digits. */
+                  integer numbers. The numbers are represented as array digits and
+                  the last digit (the ones) is stored in the array at index 0. Make the
+                  method work for all numbers with length up to 10,000 digits. */
 		
 		int[] a1 = new int[10000]; //Declara 2 arrays com a largura de 10000 conforme o exercício pediu
 		int[] a2 = new int[10000];
 		
 		Console.WriteLine("Primeiro num?");
-		string num1 = Console.ReadLine();
+		string num1 = Console.ReadLine(); //O uso de string serve para que seja possível usar o .Length
 		if (num1.Length <= a1.Length) //Esse if e else verifica se o número dado ultrapassa a largura definida (Vai saber)
 		{
 			for (int i = 0; i < num1.Length; i++)
@@ -83,8 +83,8 @@ public class SumOfTwoVeryLongNumbers
 			}
 			else
 			{
-				resultado[i] = (a1[i] + a2[i] + guardar) % 10;
-			    guardar = 0;
+				resultado[i] = (a1[i] + a2[i] + guardar) % 10; 
+			    guardar = 0; //Não sobra nenhum número para a próxima soma
 			}
 			
 		}
