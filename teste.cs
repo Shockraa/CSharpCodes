@@ -1,7 +1,9 @@
 using System;
 
-public class Program
+public class Permulation
 {
+        //Write a recursive program, which generates and prints all permutations of the numbers 1, 2, …, n, for a given integer n.
+	
 	static int[] resposta;
 	static int n;
 	static bool[] numerosUsados; // Array para acompanhar os números que já foram usados
