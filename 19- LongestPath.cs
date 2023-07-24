@@ -6,8 +6,8 @@ public class LabirintoSaidaLonga
     //O Labirinto checa todos os caminhos possíveis e armazena o maior deles.
     static char[,] lab = { 
         {' ', ' ', ' ', ' ', ' ', '*', ' '}, //O labirinto pode ser modificado contanto que haja uma saída
-        {'*', '*', '*', '*', ' ', '*', ' '},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' '},
+        {'*', '*', '*', '*', ' ', '*', ' '}, //A posição inicial é o canto superior esquerdo, pode ser mudada no método abaixo
+        {' ', ' ', ' ', ' ', ' ', ' ', ' '}, //Os espaços vazios podem ser passados, os * são bloqueios e o "e" é a saída.
         {'*', '*', '*', ' ', '*', '*', ' '},
         {' ', ' ', ' ', ' ', ' ', ' ', 'e'},
     };
@@ -15,7 +15,7 @@ public class LabirintoSaidaLonga
 	static string longestPath = ""; //String que armazena as direções do caminho mais longo
     public static void Main()
     {
-        Caminho(0, 0, " "); //Ativa método
+        Caminho(0, 0, " "); //Ativa método (os números equivalem a posição inicial)
 		Console.WriteLine("Caminho mais transitável: " + longestPath); //Resposta
     }
 
