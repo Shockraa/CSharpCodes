@@ -1,8 +1,8 @@
 using System;
 
-class MatrizEspiral
+public class MatrizEspiral
 {
-    static void Main()
+    public static void Main()
     {
 		//  Write a program that for a given number n, outputs a matrix in the form of a spiral:
 
