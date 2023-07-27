@@ -4,19 +4,24 @@ namespace CreatingAndUsingObjects
 {
 	public class Cat
 	{
-		// Field name
+                /*Define your own namespace CreatingAndUsingObjects and place in it
+                 two classes Cat and Sequence, which we used in the examples of the
+                current chapter. Define one more namespace and make a class, which
+                calls the classes Cat and Sequence, in it.*/
+
+		//Namespace usado no outro exercício
+ 
 		public string name;
-		// Field color
 		public string color;
 
-        public Cat()
+                public Cat() // Constructor
 		{
 			this.name = "Unnamed";
 			this.color = "gray";
 			 SayMiau(this.name, this.color);
 		}
-		// Constructor with parameters
-		public Cat(string name, string color)
+		
+		public Cat(string name, string color) // Constructor
 		{
 			this.name = name;
 			this.color = color;
