@@ -1,8 +1,8 @@
 using System;
 
-class ArrayIguais
+public class ArrayIguais
 {
-    static void Main()
+    public static void Main()
     {
         /Write a program, which reads two arrays from the console and checks 
           whether they are equal (two arrays are equal when they are of equal 
