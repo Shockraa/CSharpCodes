@@ -6,6 +6,11 @@ public class Program
     {
         Random random = new Random();
 
+        /*Write a program, which generates a random advertising message for
+          some product. The message has to consist of laudatory phrase, followed
+          by a laudatory story, followed by author (first and last name) and city,
+          which are selected from predefined lists. */
+
         string[] frase = {"The product is excellent. ", "This is a great product. ", " I use this product constantly. ", " This is the best product from this category. "};
         string[] hist = {"Now I feel better. " , "I managed to change. " , "It made some miracle. " , "I can’t believe it, but now I am feeling great. " , " You should try it , too. I am very satysfied. "}; 
         string[] nome = {"Dayan ", "Stella ", "Hellen ", "Kate "};
@@ -20,5 +25,5 @@ public class Program
 
         string resposta = frase[index1] + hist[index2] + nome[index3] + sobrenome[index4] + cidade[index5];
         Console.WriteLine(resposta);
-        }
     }
+}
