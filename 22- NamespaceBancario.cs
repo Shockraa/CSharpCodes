@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoBancario
+namespace ProjetoBancario //Usado no outro ex da mesma numeração (22)
 {
    
     public class Conta
     {
         public double saldo;
-        public int numero;
+        public int numero; //Cria valores
 
     public Conta()  //primeiro parametro
     {
-        this.saldo = 0;
+        this.saldo = 0; //Atribui caso não possua argumentos
         this.numero = 0;
     }
      public Conta(double saldoInicial) //segundo parametro
