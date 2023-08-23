@@ -32,7 +32,7 @@ public class Program
 			}
 			if (escolha == 4)
 			{
-				
+				//Opção mostrar (ignorar)
 			}
 		}
 
@@ -52,7 +52,7 @@ public class Comanda
 
     public Comanda()
 	{
-		this.id = 666; //Exemplo
+		this.id = 0; //Exemplo
 	    this.valorConsumo = 0;
 		this.valorEstacionamento = 0;
 		this.valorCouvert = 0;
