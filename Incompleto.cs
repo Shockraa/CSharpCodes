@@ -47,8 +47,8 @@ public class Comanda
 	private double valorConsumo;
 	private double valorEstacionamento;
 	private double valorCouvert;
-    private double valorDescontoPromocional;
-	private double valorTotal;
+    private static double valorDescontoPromocional;
+	private static double valorTotal;
 
     public Comanda()
 	{
@@ -56,14 +56,20 @@ public class Comanda
 	    this.valorConsumo = 0;
 		this.valorEstacionamento = 0;
 		this.valorCouvert = 0;
-		this.valorDescontoPromocional = 0;
-		this.valorTotal = 0;
+		
 	
 	}
 	
 
 	public static void lancarGastos()
 	{
+		set {;}
+		set {valorTotal = 0;}
+		Console.WriteLine("Valor consumido?");
+		
+		Console.WriteLine("Valor estacionamento?");
+		
+		Console.WriteLine("Valor couvert?");
 		
 	}
 	public static void verificarPromocao()
