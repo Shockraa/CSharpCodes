@@ -23,16 +23,16 @@ public class Program
 
 			if (escolha == 2)
 			{
-				
+				Comanda.verificarPromocao();
 			}
 
 			if (escolha == 3)
 			{
-				
 			}
+
 			if (escolha == 4)
 			{
-				//Opção mostrar (ignorar)
+			//Opção mostrar (ignorar)
 			}
 		}
 
@@ -42,48 +42,56 @@ public class Program
 
 public class Comanda
 {
-	
 	private int id;
 	private double valorConsumo;
 	private double valorEstacionamento;
 	private double valorCouvert;
-    private double valorDescontoPromocional;
+	private double valorDescontoPromocional;
 	private double valorTotal;
-
-    public Comanda()
+	
+	public Comanda()
 	{
 		this.id = 0; //Exemplo
-	    this.valorConsumo = 0;
+		this.valorConsumo = 0;
 		this.valorEstacionamento = 0;
 		this.valorCouvert = 0;
-		
-	
 	}
+
 	public Comanda(double valorConsumo, double valorEstacionamento, double valorCouvert)
 	{
 		this.valorDescontoPromocional = 0;
 		this.valorTotal = 0;
-		
+		this.valorConsumo = valorConsumo;
+		this.valorEstacionamento = valorEstacionamento;
+		this.valorCouvert = valorCouvert;
+	}
+	public Comanda(int id)
+	{
+		this.id = 0;
 	}
 
 	public static void lancarGastos()
 	{
-		Comanda controleMesa = new Comanda(controleMesa.valorConsumo, controleMesa.valorEstacionamento, controleMesa.valorCouvert);
-		
 		Console.WriteLine("Valor consumido?");
-		valorConsumo = 0;
+		double valorConsumo = double.Parse(Console.ReadLine());
 		Console.WriteLine("Valor estacionamento?");
-		
+		double valorEstacionamento = double.Parse(Console.ReadLine());
 		Console.WriteLine("Valor couvert?");
-		
+		double valorCouvert = double.Parse(Console.ReadLine());
+		Comanda controleMesa = new Comanda(valorConsumo, valorEstacionamento, valorCouvert); //Segundo construtor
+		Console.WriteLine("Os gastos foram lançados.");
 	}
+
 	public static void verificarPromocao()
 	{
-		
+		if (this.valorConsumo > 100)
+		{
+			
+		}
 	}
+
 	public static void listarComanda()
 	{
-		
 	}
 }
 
@@ -91,6 +99,6 @@ public class Caixa
 {
 	public static double totalizarComanda()
 	{
-		
+	//ignorar
 	}
 }
