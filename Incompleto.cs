@@ -28,6 +28,7 @@ public class Program
 
 			if (escolha == 3)
 			{
+				Caixa.totalizarComanda(controleMesa);
 			}
 
 			if (escolha == 4)
@@ -43,25 +44,25 @@ public class Program
 public class Comanda
 {
 	private int id;
-	private double valorConsumo;
+	private static double valorConsumo;
 	private double valorEstacionamento;
 	private double valorCouvert;
-	private double valorDescontoPromocional;
+	private static double valorDescontoPromocional;
 	private double valorTotal;
 	
 	public Comanda()
 	{
 		this.id = 0; //Exemplo
-		this.valorConsumo = 0;
+		valorConsumo = 0;
 		this.valorEstacionamento = 0;
 		this.valorCouvert = 0;
 	}
 
-	public Comanda(double valorConsumo, double valorEstacionamento, double valorCouvert)
+	public Comanda(double refvalorConsumo, double valorEstacionamento, double valorCouvert)
 	{
-		this.valorDescontoPromocional = 0;
+		valorDescontoPromocional = 0;
 		this.valorTotal = 0;
-		this.valorConsumo = valorConsumo;
+		valorConsumo = refvalorConsumo;
 		this.valorEstacionamento = valorEstacionamento;
 		this.valorCouvert = valorCouvert;
 	}
@@ -73,21 +74,27 @@ public class Comanda
 	public static void lancarGastos()
 	{
 		Console.WriteLine("Valor consumido?");
-		double valorConsumo = double.Parse(Console.ReadLine());
+		double refvalorConsumo = double.Parse(Console.ReadLine());
 		Console.WriteLine("Valor estacionamento?");
 		double valorEstacionamento = double.Parse(Console.ReadLine());
 		Console.WriteLine("Valor couvert?");
 		double valorCouvert = double.Parse(Console.ReadLine());
-		Comanda controleMesa = new Comanda(valorConsumo, valorEstacionamento, valorCouvert); //Segundo construtor
+		Comanda controleMesa = new Comanda(refvalorConsumo, valorEstacionamento, valorCouvert); //Segundo construtor
 		Console.WriteLine("Os gastos foram lançados.");
 	}
 
 	public static void verificarPromocao()
 	{
-		if (this.valorConsumo > 100)
+		if (valorConsumo > 100)
 		{
-			
+			Console.WriteLine("Você recebeu um desconto de 10%");
+			valorDescontoPromocional = valorConsumo / 10;
 		}
+		else
+		{
+			Console.WriteLine("Sem desconto >:( ");
+		}
+		
 	}
 
 	public static void listarComanda()
@@ -97,8 +104,10 @@ public class Comanda
 
 public class Caixa
 {
-	public static double totalizarComanda()
-	{
-	//ignorar
-	}
+	public static void totalizarComanda(Comanda controleMesa)
+    {
+        double total = Comanda.ValorTotal;
+
+        Console.WriteLine("Total da comanda: " + total);
+    }
 }
