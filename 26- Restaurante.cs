@@ -6,7 +6,7 @@ public class Program
     {
         Comanda controleMesa = new Comanda();
         Caixa caixa = new Caixa();
-        int escolha = 5;
+        int escolha = 5; 
 
         while (escolha != 0)
         {
@@ -52,7 +52,7 @@ public class Comanda
     private double valorDescontoPromocional;
     private double valorTotal;
 
-    public Comanda()
+    public Comanda() //Primeiro construtor
     {
         this.id = 0;
         this.valorConsumo = 0;
@@ -60,7 +60,7 @@ public class Comanda
         this.valorCouvert = 0;
     }
 
-    public Comanda(double refvalorConsumo, double valorEstacionamento, double valorCouvert)
+    public Comanda(double refvalorConsumo, double valorEstacionamento, double valorCouvert) //Segundo construtor com os valores recebidos
     {
         this.valorDescontoPromocional = 0;
         this.valorTotal = 0;
@@ -69,7 +69,7 @@ public class Comanda
         this.valorCouvert = valorCouvert;
     }
 
-    public Comanda(int id)
+    public Comanda(int id) //Terceiro construtor para inicializar o ID
     {
         this.id = 0;
     }
@@ -107,7 +107,7 @@ public class Comanda
 
     public void ListarComanda()
     {
-        Console.WriteLine($"Valor Consumo: {this.valorConsumo}");
+        Console.WriteLine($"Valor Consumo: {this.valorConsumo}"); //Exibir valores
         Console.WriteLine($"Valor Estacionamento: {this.valorEstacionamento}");
         Console.WriteLine($"Valor Couvert: {this.valorCouvert}");
         Console.WriteLine($"Desconto Promocional: {this.valorDescontoPromocional}");
