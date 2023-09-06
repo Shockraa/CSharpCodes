@@ -5,8 +5,8 @@ public class Program
     public static void Main()
     {
         Comanda controleMesa = new Comanda();
-        Caixa caixa = new Caixa();
-        int escolha = 5; 
+        Caixa caixa = new Caixa(); //Obj inutilizavel
+        int escolha = 5; //Num diferente das alternativas
 
         while (escolha != 0)
         {
