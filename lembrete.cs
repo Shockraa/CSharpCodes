@@ -19,3 +19,11 @@ Seven tools of the bandit
 Torrential tribute
 Trap hole
 Widespread ruin
+
+----
+
+3 - 7 Colored fish
+La JKinn
+Giant red seasnake
+Harpies brother
+
