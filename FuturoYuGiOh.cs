@@ -12,12 +12,10 @@ public class Program
 
 Magic Cylinder
 Magic Janner
-Metalmorph
 Mirror Force
 Negate Attack
 Seven tools of the bandit
 Torrential tribute
-Trap hole
 Widespread ruin
 
 
