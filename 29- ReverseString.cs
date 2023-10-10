@@ -4,6 +4,10 @@ using System.Text; //Importação para usar StringBuilder
 public class Program
 {
 //Ex 2
+/*Write a program that reads a string, reverse it and prints it to the
+console. For example: "introduction"  "noitcudortni". */
+
+
     public static void Main()
     {
         Console.WriteLine("Insira qualquer coisa para inverter");
