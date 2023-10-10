@@ -4,9 +4,10 @@ public class Program
 {
 	public static void Main()
 	{ 
+//Lembrete: Ex 3
 		Console.WriteLine("Insira uma expressão numérica");
 		string exp = Console.ReadLine();
-        char[] charArray = exp.ToCharArray();
+                char[] charArray = exp.ToCharArray();
 		int contador = 0;
 		
 		for (int i = 0; i < charArray.Length; i++)
