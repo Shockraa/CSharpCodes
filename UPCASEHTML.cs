@@ -5,6 +5,10 @@ public class Program
 {
 	public static void Main()
 	{
+		/*A text is given. Write a program that modifies the casing of letters to
+                  uppercase at all places in the text surrounded by <upcase> and
+                 </upcase> tags. Tags cannot be nested.*/
+		
 		Console.WriteLine("Digite uma frase");
 		string frase = Console.ReadLine();
 		string modificada = Modificar(frase);
