@@ -4,7 +4,8 @@ public class Program
 {
 	public static void Main()
 	{
-    //Lembrete ex 5
+         /*Write a program that detects how many times a substring is contained in
+           the text. For example, let’s look for the substring "in" in the text: */
     
 		Console.WriteLine("Insira uma frase");
 		string quote = Console.ReadLine();
