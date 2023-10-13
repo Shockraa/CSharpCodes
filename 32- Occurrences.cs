@@ -9,7 +9,7 @@ public class Program
     
 		Console.WriteLine("Insira uma frase");
 		string quote = Console.ReadLine();
-		quote.ToLower();
+		quote.ToLower(); //Necessário diminuir letras para evitar erro caso tenha letra maiuscula
 		string palavraChave = "in";
 		int num = quote.IndexOf(palavraChave);
 		while (num != -1)
