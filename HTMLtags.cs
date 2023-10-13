@@ -4,9 +4,9 @@ public class Program
 {
 	public static void Main()
 	{
-		string html = "<body><h1>Eu sou eu</h1></body><script>lololol</script>";
-		string pattern = "<.*?>";
-		string textoLimpo = Regex.Replace(html, pattern, string.Empty);
+		string html = "<body><h1>Comando: </h1></body><script>console.log()</script>";
+		string pattern = "<.*?>"; //sequencia
+		string textoLimpo = Regex.Replace(html, pattern, string.Empty); //trocar texto
 		Console.WriteLine(textoLimpo);
 	}
 }
