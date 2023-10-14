@@ -20,9 +20,9 @@ console. For example: "introduction"  "noitcudortni". */
         StringBuilder sb = new StringBuilder(); 
         for (int i = resposta.Length - 1; i >= 0; i--)
         {
-            sb.Append(resposta[i]);
+            sb.Append(resposta[i]); //Adiciona a string mutável o reverso da outra
         }
 
-        return sb.ToString();
+        return sb.ToString(); //retorna convertendo
     }
 }
