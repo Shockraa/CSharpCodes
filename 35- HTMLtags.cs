@@ -1,6 +1,9 @@
 using System;
 using System.Text.RegularExpressions;		
 public class Program
+
+/*Write a program that extracts all the text without any tags and
+attribute values from an HTML document.*/
 {
 	public static void Main()
 	{
