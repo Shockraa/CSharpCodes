@@ -4,6 +4,8 @@ public class Program
 {
     public static void Main()
     {
+        /*Write a program that extracts from a text all words which are
+          palindromes, such as ABBA", "lamal", "exe".*/
         Console.WriteLine("Insira uma frase para encontrar palavras palíndromes:");
         string frase = Console.ReadLine();
 
