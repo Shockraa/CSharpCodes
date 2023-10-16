@@ -4,21 +4,21 @@ class JogoDaVelha
 {
     static void Main()
     {
-        char[,] tabuleiro = new char[3, 3];
+        char[,] tabuleiro = new char[3, 3]; //Cria tabuleiro
         char jogador = 'O';
 
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
             {
-                tabuleiro[i, j] = ' ';
+                tabuleiro[i, j] = ' '; //Mostra tabuleiro vazio
             }
         }
 
         bool jogoTerminado = false;
-        while (!jogoTerminado)
+        while (!jogoTerminado) //Ativa loop que termina quando uma das condições der verdadeiro (as que encerram o jogo de alguma forma)
         {
-            ImprimirTabuleiro(tabuleiro);
+            ImprimirTabuleiro(tabuleiro); //O tabuleiro é impresso a cada rodada
 
             Console.WriteLine("Jogador " + jogador + ", digite a linha (0-2):");
             int linha = Convert.ToInt32(Console.ReadLine());
