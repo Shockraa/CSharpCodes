@@ -4,9 +4,9 @@ public class ArrayIguais
 {
     public static void Main()
     {
-        /Write a program, which reads two arrays from the console and checks 
+        /*Write a program, which reads two arrays from the console and checks 
           whether they are equal (two arrays are equal when they are of equal 
-          length and all of their elements, which have the same index, are equal)./
+          length and all of their elements, which have the same index, are equal)*/
 
 
         Console.WriteLine("Qual é a largura em número inteiro do primeiro array?");
