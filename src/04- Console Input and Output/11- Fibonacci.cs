@@ -1,6 +1,6 @@
 using System;
 
-class Fibonacci
+class Fibonacci 
 {
     static void Main()
     {
