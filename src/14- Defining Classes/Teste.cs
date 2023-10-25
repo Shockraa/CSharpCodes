@@ -4,7 +4,7 @@ public class Program
 {
 	public static void Main()
 	{
-		GSM.DisplayNokiaN95Info();
+		
 	}
 }
 
@@ -38,12 +38,11 @@ public class GSM
 		this.owner = owner;
 	}
 
-	private static GSM nokiaN95 = new GSM("Nokia N95", "Nokia", 500, null);
-	public static void DisplayNokiaN95Info()
+	public static GSM nokiaN95 = new GSM("Nokia N95", "Nokia", 500, null);
+	
+	public string GetInfo()
 	{
-		Console.WriteLine($"Phone model: {nokiaN95.PhoneModel}");
-		Console.WriteLine($"Manufacturer: {nokiaN95.Manufacturer}");
-		Console.WriteLine($"Price: {nokiaN95.Price}");
+	return $"Phone model: {PhoneModel}\nManufacturer: {Manufacturer}\nPrice: {Price}\nOwner: {Owner}";
 	}
 }
 
@@ -89,7 +88,61 @@ public class Display
 	}
 }
 
-enum BatteryType
+public class GSMTest
+{
+    private GSM[] gsmObjects;
+
+    public GSMTest()
+    {
+        this.gsmObjects = new GSM[]
+        {
+            new GSM("Nokia N95", "Nokia", 500, "John Doe"),
+            new GSM("Samsung Galaxy S22", "Samsung", 800, "Jane Doe"),
+            new GSM("Google Pixel 6", "Google", 600, "Peter Parker")
+        };
+    }
+
+    public void DisplayGSMObjectsInfo()
+    {
+        Console.WriteLine("Information about the created GSM objects:");
+        foreach (GSM gsmObject in this.gsmObjects)
+        {
+            Console.WriteLine(gsmObject.GetInfo());
+        }
+    }
+
+    public void DisplayNokiaN95Info()
+    {
+        GSM nokiaN95 = GSM.nokiaN95;
+        Console.WriteLine("Information about the static field nokiaN95:");
+        Console.WriteLine(nokiaN95.GetInfo());
+    }
+}
+
+public class Call
+{
+    private DateTime date;
+    private TimeSpan startTime;
+    private TimeSpan duration;
+
+    public Call(DateTime date, TimeSpan startTime, TimeSpan duration)
+    {
+        this.date = date;
+        this.startTime = startTime;
+        this.duration = duration;
+    }
+
+    public DateTime Date => date;
+    public TimeSpan StartTime => startTime;
+    public TimeSpan Duration => duration;
+
+    public override string ToString()
+    {
+        return $"Date: {date}\nStart time: {startTime}\nDuration: {duration}";
+    }
+}
+
+public enum BatteryType
 {
 	LiIon,
 	NiMH,
