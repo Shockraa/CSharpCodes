@@ -4,27 +4,32 @@ public class Program
 {
     public static void Main()
     {
+        /* Write a program that takes a positive integer from the console and prints
+        the square root of this integer. If the input is negative or invalid print
+        "Invalid Number" in the console. In all cases print "Good Bye". */
+
+        
         double num = 0.0;
         try
         {
-            Console.WriteLine("Insira um número para saber a raiz quadrada");
+            Console.WriteLine("Give a number");
             num = double.Parse(Console.ReadLine());
             num = Math.Sqrt(num);
 
             if (double.IsNaN(num))
             {
-                throw new Exception("Não é um número válido.");
+                throw new Exception("Not a valid number!");
             }
         }
         catch (FormatException)
         {
-            Console.WriteLine("É para dar um número!");
+            Console.WriteLine("I said, give a number!");
         }
         finally
         {
             if (!double.IsNaN(num))
             {
-                Console.WriteLine("Raiz quadrada: " + num);
+                Console.WriteLine("Square root: " + num);
             }
             Console.WriteLine("Good bye");
         }
