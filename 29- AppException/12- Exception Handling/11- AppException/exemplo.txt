@@ -1,6 +1,5 @@
 47
 3
-Eu tenho 20 cm facil
 34
 Aaa
 
@@ -8,4 +7,4 @@ Obs: Se o programa executar corretamente, é esperado que a Linha 3 apresente a 
 A linha 3 não é um inteiro, por isso a exception é ativada
 
 Lembre-se que você pode modificar o arquivo como quiser!
-Shoutout to Timeless gang, liverpool and $NOT 
+Shoutout to Timelessirius!
