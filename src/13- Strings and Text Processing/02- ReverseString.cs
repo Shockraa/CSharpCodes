@@ -10,7 +10,7 @@ console. For example: "introduction"  "noitcudortni". */
 
     public static void Main()
     {
-        Console.WriteLine("Insira qualquer coisa para inverter");
+        Console.WriteLine("Insert something to reverse");
         string resposta = Console.ReadLine();
         Console.WriteLine(Reverso(resposta)); //Método do StringBuilder
     }
