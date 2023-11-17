@@ -9,7 +9,7 @@ public class Program
                   uppercase at all places in the text surrounded by <upcase> and
                  </upcase> tags. Tags cannot be nested.*/
 		
-		Console.WriteLine("Digite uma frase"); //Use: <upcase> </upcase>
+		Console.WriteLine("Input html text"); //Use: <upcase> </upcase>
 		string frase = Console.ReadLine();
 		string modificada = Modificar(frase); //Método para modificar a frase
 		 Console.WriteLine(modificada);
