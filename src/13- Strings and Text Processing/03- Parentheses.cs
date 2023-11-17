@@ -5,7 +5,13 @@ public class Program
 	public static void Main()
 	{ 
 //Lembrete: Ex 3
-		Console.WriteLine("Insira uma expressão numérica");
+
+/*Write a program that checks whether the parentheses are placed
+correctly in an arithmetic expression. Example of expression with
+correctly placed brackets: ((a+b)/5-d). Example of an incorrect
+expression: )(a+b)).*/
+
+		Console.WriteLine("Insert a numerical expression");
 		string exp = Console.ReadLine();
                 char[] charArray = exp.ToCharArray();
 		int contador = 0;
@@ -23,11 +29,11 @@ public class Program
 		}
 		if (contador == 0)
 		{
-		   Console.WriteLine("É uma expressão numérica valida");
+		   Console.WriteLine("It is valid!");
 		}
 		else
 		{
-			Console.WriteLine("Não é uma expressão numérica valida");
+			Console.WriteLine("lol, not valid!");
 		}
 	}
 }
