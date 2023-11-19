@@ -6,8 +6,13 @@ public class Program
 {
     public static void Main()
     {
-        List<int> seq = new List<int>();
-        int num = 1;
+        /*Write a program that reads from the console a sequence of positive
+          integer numbers. The sequence ends when empty line is entered.
+          Calculate and print the sum and the average of the sequence. Keep
+          the sequence in List<int>.*/
+        
+        List<int> seq = new List<int>(); //Creates list
+        int num = 1; //Gives a temp number
 
         while (true)
         {
@@ -15,14 +20,14 @@ public class Program
 
             string input = Console.ReadLine();
 
-            if (string.IsNullOrWhiteSpace(input))
+            if (string.IsNullOrWhiteSpace(input)) //Only works w strings
             {
                 break;
             }
 
             try
             {
-                num = int.Parse(input);
+                num = int.Parse(input); //Converts the input into int and adds to the list
                 seq.Add(num);
             }
             catch (FormatException)
@@ -30,7 +35,7 @@ public class Program
                 Console.WriteLine("Invalid input, please a number...");
             }
         }
-        CalculateSum(seq);
+        CalculateSum(seq); // Methods to calculate and display
         CalculateAverage(seq);
     }
     static void CalculateSum(List<int> seq)
