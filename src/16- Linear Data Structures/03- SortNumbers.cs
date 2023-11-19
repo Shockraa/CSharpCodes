@@ -6,10 +6,9 @@ public class Program
 {
     public static void Main()
     {
-        /*Write a program that reads from the console a sequence of positive
-          integer numbers. The sequence ends when empty line is entered.
-          Calculate and print the sum and the average of the sequence. Keep
-          the sequence in List<int>.*/
+        /* Write a program that reads from the console a sequence of positive
+           integer numbers. The sequence ends when an empty line is entered. Print
+           the sequence sorted in ascending order. */
         
         List<int> seq = new List<int>(); //Creates list
         int num = 1; //Gives a temp number
