@@ -6,28 +6,28 @@ public class Program
     {
         /*Write a program that extracts from a text all words which are
           palindromes, such as ABBA", "lamal", "exe".*/
-        Console.WriteLine("Insira uma frase para encontrar palavras palíndromes:");
+        Console.WriteLine("Insert a sentence:");
         string frase = Console.ReadLine();
 
-        string[] palavras = frase.Split(' ', StringSplitOptions.RemoveEmptyEntries); //Remover espaços e adicionar no array
+        string[] palavras = frase.Split(' ', StringSplitOptions.RemoveEmptyEntries); //Remover spaces to add on the array
 
         foreach (string palavra in palavras)
         {
-            if (Verificar(palavra)) //Ativa método para verificar palavra palindrome 
+            if (Verificar(palavra)) //Method below to verify if the word is palindrome
             {
-                Console.WriteLine(palavra); 
+                Console.WriteLine(palavra); //Display the word
             }
         }
     }
 
     public static bool Verificar(string palavra)
     {
-        palavra = palavra.Replace(" ", "").ToLower(); //Necessário
+        palavra = palavra.Replace(" ", "").ToLower(); //Necessary conversion
         char[] arr = palavra.ToCharArray(); 
         Array.Reverse(arr);
         string palavraReversa = new string(arr);
 
-        return palavra == palavraReversa; //Retonra a comparação dos dois arrays
+        return palavra == palavraReversa; //Retonra the comparision of both arrays
     }
 }
 
