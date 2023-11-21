@@ -5,7 +5,11 @@ public class Program
 {
 	public static void Main(string[] args)
 	{
-		List<int> list = new List<int> {1, 4, 6, 7, 6, 2, 9, 5, 3, 2, 1, 5, 6, 7, 2, 2, 2, 2, 4, 4, 4, 7, 8, 33, 14 };
+                /* Write a method that finds the longest subsequence of equal numbers
+                  in a given List<int> and returns the result as new List<int>. Write a
+                  program to test whether the method works correctly. */
+		
+		List<int> list = new List<int> {1, 4, 6, 7, 6, 2, 9, 5, 3, 2, 1, 5, 6, 7, 2, 2, 2, 2, 4, 4, 4, 7, 8, 33, 14 }; //Insert your array here
 		
 		List<int> result = FindLongestSub(list);
 		foreach (int num in result)
