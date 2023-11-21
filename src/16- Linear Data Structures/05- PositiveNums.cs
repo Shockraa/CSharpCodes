@@ -5,6 +5,8 @@ public class Program
     {
         public static void Main()
         {
+            //Write a program, which removes all negative numbers from a sequence.
+
             List<int> list = new List<int> {1, 4, -6, 7, 6, -2, -9}; //Insert your array here
 
             List<int> result = FindPositiveNum(list);
