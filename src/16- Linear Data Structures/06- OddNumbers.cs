@@ -6,6 +6,7 @@ public class Program
 {
     public static void Main()
     {
+        //Write a program that removes from a given sequence all numbers that appear an odd count of times.
         int[] array = {4, 2, 2, 5, 2, 3, 2, 3, 1, 5, 2};
         array = InsertValues(array);
 
@@ -17,7 +18,7 @@ public class Program
     }
     static int[] InsertValues(int[] array)
     {
-        Dictionary<int, int> dictionary = new Dictionary<int, int>();
+        Dictionary<int, int> dictionary = new Dictionary<int, int>(); //Fast book solution
         List<int> list = new List<int>();
         foreach (int num in array)
         {
