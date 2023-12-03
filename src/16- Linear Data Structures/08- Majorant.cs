@@ -6,6 +6,11 @@ public class Program
 {
     public static void Main()
     {
+
+        /* The majorant of an array of size N is a value that occurs in it at least
+          N/2 + 1 times. Write a program that finds the majorant of given array
+          and prints it. If it does not exist, print "The majorant does not exist!". */
+        
         int[] array = {2, 2, 3, 3, 2, 3, 4, 3, 3};
         List<int> list = new List<int>();
 
@@ -41,7 +46,7 @@ public class Program
             }
             if (i >= (list.Count / 2 + 1) && list[i] != currentNumber)
             {
-                throw new Exception("There's no majorant!");
+                throw new Exception("There's no majorant!"); //Or return "There's no Majorant!"
             }
         }
         return currentNumber;
