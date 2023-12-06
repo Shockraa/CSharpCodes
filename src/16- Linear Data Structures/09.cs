@@ -6,6 +6,9 @@ public class Program
 {
     public static void Main()
     {
+        /*Using the Queue<T> class, write a program which by given N prints on the
+          console the first 50 elements of the sequence  (the sequence is on the book) */
+        
         Console.WriteLine("Give a number");
         int N = int.Parse(Console.ReadLine());
 
@@ -25,10 +28,10 @@ public class Program
             Console.Write(current + " ");
 
             queue.Enqueue(current + 1);
-            queue.Enqueue(2 * current + 1);
+            queue.Enqueue(2 * current + 1); 
             queue.Enqueue(current + 2);
 
-            count += 3;
+            count += 3; //Equivalent to the enqueue methods
         }
     }
 
