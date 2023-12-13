@@ -5,6 +5,9 @@ public class Program
 {
     public static void Main()
     {
+
+        //Write a program, which finds the shortest subsequence from the operations, which starts with N and ends with M. Use queue.
+
         Console.WriteLine("Give N");
         int N = int.Parse(Console.ReadLine());
 
