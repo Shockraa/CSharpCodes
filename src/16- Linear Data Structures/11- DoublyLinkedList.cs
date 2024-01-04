@@ -5,6 +5,7 @@ public class Program
 {
     public static void Main()
     {
+        //Implement the data structure dynamic doubly linked list...
         DoublyLinkedList<int> list = new DoublyLinkedList<int>();
         list.Add(1);
         list.Add(32);
