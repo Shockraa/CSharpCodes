@@ -4,6 +4,7 @@ public class Program
 {
     public static void Main()
     {
+        
         DynamicStack<int> stack = new DynamicStack<int>();
 
         stack.Push(1);
