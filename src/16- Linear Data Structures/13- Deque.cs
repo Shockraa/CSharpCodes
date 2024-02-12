@@ -4,6 +4,7 @@ public class Program
 {
     public static void Main()
     {
+        //Implement the data structure "Deque".
         Deque<int> deque = new Deque<int>();
         
         deque.AddFront(1);
